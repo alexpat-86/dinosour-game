@@ -1,0 +1,41 @@
+#playspace {
+    border: 1px solid black;
+    height: 500px;
+}
+
+#player {
+    position: relative;
+    background-color: blue;
+    height: 60px;
+    width: 40px;
+    top: 240px;
+    animation: jump 1s infinite linear;
+}
+
+#floor {
+    position: relative;
+    border: 1px solid black;
+    top: 200px;
+}
+
+#obstacle {
+    position: relative;
+    background-color: red;
+    height: 40px;
+    width: 40px;
+    top: 200px;
+    left: 500px;
+    animation: avoid 1s infinite linear;
+}
+
+@keyframes avoid {
+   0%{left:500px}
+   100%{left:-20px;}
+}
+
+@keyframes jump {
+    0%{top: 240px;}
+    30%{top:160px;}
+    70%{top:160px;}
+    100%{top:240px;}
+}
