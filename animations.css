@@ -1,0 +1,35 @@
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes jump {
+    0%{top:220px;}
+    30%{top:150px;}
+    70%{top:150px;}
+    100%{top:220px;}
+}
+
+@keyframes jumpmove {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(270deg);
+    }
+}
+
+@keyframes avoid {
+    0%{left:900px}
+    100%{left:-1px;}
+ }
+
+ @keyframes shoot {
+    0%{left:900px}
+    100%{left:-10px;}
+ }
+ 
