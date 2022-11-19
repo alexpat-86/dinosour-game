@@ -1,4 +1,4 @@
-#playspace {
+.playspace {
     border: 1px solid black;
     height: 500px;
 }
@@ -9,8 +9,19 @@
     height: 60px;
     width: 40px;
     top: 240px;
-    animation: jump 1s infinite linear;
 }
+
+.animate {
+    animation: jump 1s linear;
+}
+
+@keyframes jump {
+    0%{top:240px;}
+    30%{top:120px;}
+    70%{top:120px;}
+    100%{top:240px;}
+}
+
 
 #floor {
     position: relative;
@@ -29,13 +40,9 @@
 }
 
 @keyframes avoid {
-   0%{left:500px}
-   100%{left:-20px;}
+   0%{left:900px}
+   100%{left:-1px;}
 }
 
-@keyframes jump {
-    0%{top: 240px;}
-    30%{top:160px;}
-    70%{top:160px;}
-    100%{top:240px;}
-}
+
+
